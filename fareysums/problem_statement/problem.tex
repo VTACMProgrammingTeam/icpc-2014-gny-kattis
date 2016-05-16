@@ -1,0 +1,74 @@
+\problemname{Farey Sums}
+
+\noindent
+Given a positive integer, $N$, the sequence of all fractions $a / b$ with
+$(0 < a \le b), (1 \le b \le N)$ and $a$ and $b$ relatively prime,
+listed in increasing order, is called the \emph{Farey Sequence of order N}.
+
+\noindent
+For example, the \emph{Farey Sequence of order 6} is:
+
+\begin{center}
+    $\frac{0}{1}, 
+     \frac{1}{6},
+     \frac{1}{5},
+     \frac{1}{4},
+     \frac{1}{3},
+     \frac{2}{5},
+     \frac{1}{2},
+     \frac{3}{5},
+     \frac{2}{3},
+     \frac{3}{4},
+     \frac{4}{5},
+     \frac{5}{6},
+     \frac{1}{1}
+    $
+\end{center}
+
+If the denominators of the \emph{Farey Sequence of order N} are:
+
+\begin{center}
+$b_1, b_2, \ldots, b_K$
+\end{center}
+
+then the \emph{Farey Sum of order N} is the sum of $b_i / b_{i+1}$ from $i = 1 \ldots K-1$.
+
+For example, the \emph{Farey Sum of order 6} is:
+
+\begin{center}
+$\frac{1}{6}
++\frac{6}{5}
++\frac{5}{4}
++\frac{4}{3}
++\frac{3}{5}
++\frac{5}{2}
++\frac{2}{5}
++\frac{5}{3}
++\frac{3}{4}
++\frac{4}{5}
++\frac{5}{6}
++\frac{6}{1}
+=
+\frac{35}{2}
+$
+\end{center}
+
+Write a program to compute the \emph{Farey Sum of order N} (input)!
+
+\section*{Input}
+
+The first line of input contains a single integer $P$, ($1 \le P \le 9999$),
+which is the number of data sets that follow.  Each data set should be
+processed identically and independently.
+
+Each data set consists of a single line of input.  It contains the data
+set number, $K$, followed by the order $N$, ($2 \le N \le 10000$), of the
+\emph{Farey Sum} that is to be computed.
+
+\section*{Output}
+
+For each data set there is a single line of output.  The single output
+line consists of the data set number, $K$, followed by a single space
+followed by the \emph{Farey Sum} as a decimal fraction in lowest terms.  If the
+denominator is $1$, print only the numerator.
+

@@ -1,0 +1,69 @@
+\problemname{Happy Happy Prime Prime}
+
+\noindent
+\textbf{RILEY VASHTEE}: [\textit{reading from display}]  Find the next number in the sequence:
+
+\begin{center}
+    \textbf{313 331 367 ...? What?}
+\end{center}
+
+\noindent
+\textbf{THE DOCTOR: 379.}
+
+\noindent
+\textbf{MARTHA JONES:} What?
+
+\noindent
+\textbf{THE DOCTOR:} It’s a sequence of happy primes – \textbf{379}.
+
+\noindent
+\textbf{MARTHA JONES:} Happy \textit{what?}
+
+\noindent
+\textbf{THE DOCTOR}: Any number that reduces to one when you take the sum of the
+square of its digits and continue iterating it until it yields $1$ is a
+happy number. Any number that doesn't, isn't.  A \emph{happy} prime is both
+happy and prime.
+
+\noindent
+\textbf{THE DOCTOR}: I dunno, talk about \emph{dumbing down}.  
+Don't they teach recreational mathematics anymore?
+
+\noindent
+Excerpted from ``\textit{Dr. Who},'' Episode 42 (2007).
+
+The number 7 is certainly prime.  But is it happy?
+
+\begin{eqnarray*}
+    7 & \rightarrow & 7^2 = 49 \\
+    49 & \rightarrow & 4^2 + 9^2 = 97 \\
+    97 & \rightarrow & 9^2 + 7^2 = 130 \\
+    130 & \rightarrow & 1^2 + 3^2 = 10 \\
+    10 & \rightarrow & 1^2 + 0^2 = 1 \\
+\end{eqnarray*}
+
+\noindent
+It is happy \texttt{:-)}
+As it happens, 7 is the smallest happy prime.  
+Please note that for the purposes of this problem, 1 is \emph{not} prime.
+
+\noindent
+For this problem you will write a program to determine if a number is a happy prime.
+
+\section*{Input}
+
+The first line of input contains a single integer $P$, ($1 \le P \le 10000$),
+which is the number of data sets that follow.  Each data set should be
+processed identically and independently.
+
+Each data set consists of a single line of input.  It contains the data set number, $K$, 
+followed by the happy prime candidate, $m$, ($1 \le m \le 10000$).
+
+\section*{Output}
+
+For each data set there is a single line of output.  The single output
+line consists of the data set number, $K$, followed by a single space
+followed by the candidate, $m$, followed by a single space, followed by
+\texttt{YES} or \texttt{NO}, indicating whether $m$ is a happy prime.
+
+
